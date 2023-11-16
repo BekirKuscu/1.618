@@ -1,5 +1,5 @@
 import React from 'react';
-
+import "./WasteQuote.css"
 export default function WasteQuote() {
     return (
       <div>
