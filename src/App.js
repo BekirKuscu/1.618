@@ -3,6 +3,7 @@ import Navbar from './Components/Navbar';
 import Header from './Components/Header';
 import WasteDetail from './Components/WasteDetail';
 import WasteQuote from './Components/WasteQuote';
+import Footer from './Components/Footer';
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Header />
       <WasteDetail />
       <WasteQuote />
+      <Footer />
     </div>
   );
 }
