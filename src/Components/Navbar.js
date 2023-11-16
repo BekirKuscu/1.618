@@ -16,6 +16,7 @@ export default function Navbar() {
             <nav role="navigation" class="ui-section-header--nav ui-layout-flex">
                 <a href="#" role="link" aria-label="#" class="ui-section-header--nav-link">Home</a>
                 <a href="" role="link" aria-label="#" class="ui-section-header--nav-link">MoreInfo</a>
+                <a href="#" role="link" aria-label="#" class="ui-section-header--nav-link">Donations</a>
                 <a href="https://github.com/BEKIRKSU/1.618" role="link" aria-label="#" class="ui-section-header--nav-link">GitHub</a>
             </nav>
             </div>
