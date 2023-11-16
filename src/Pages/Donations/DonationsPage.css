@@ -1,0 +1,86 @@
+
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    margin-top: 4vw;
+    font-family: oswald;
+    font-size: 4vw;
+    font-weight: 500;
+    text-transform: uppercase;
+    line-height: 1;
+}
+
+p {
+    color: #555;
+}
+
+section {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+
+.donations-quote {
+    position: relative;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    color: #070707;
+    padding: 30px 0;
+    width: 100%;
+    max-width: 70vw;
+    z-index: 1;
+    margin: 80px auto;
+    align-self: center;
+    border-top: solid 1px;
+    border-bottom: solid 1px;
+}
+
+h2 {
+    color: #007bff;
+}
+
+input {
+    padding: 10px;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.donationsBox {
+    margin: 10vw auto; 
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    max-width: 50vw;
+    text-align: center;
+}
+
+.donationsBox:hover {
+    transform: scale(1.05);
+}
