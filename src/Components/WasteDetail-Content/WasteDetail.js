@@ -1,4 +1,5 @@
 import React from 'react';
+import "./WasteDetail.css"
 
 export default function WasteDetail() {
   return (

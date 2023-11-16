@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import { Cloudinary } from 'cloudinary-core';
+import "./Header.css"
 
 export default function Header() {
 
