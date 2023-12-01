@@ -1,0 +1,52 @@
+
+
+.navbar {
+    background-color: #ffffff;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+  }
+  
+  .logo {
+    max-width: 100px;
+  }
+  
+  .nav-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav-item {
+    margin: 0 20px;
+  }
+  
+  .nav-link {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+    font-family: 'Georgia', 'Times New Roman', Times, serif;
+    text-transform: uppercase;
+    transition: transform 0.3s ease, color 0.3s ease;
+  }
+  
+  .nav-link:hover {
+    transform: scale(1.1);
+    color: #1f8ef1;
+  }
+  
+  .nav-link:hover:before {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 50%;
+    width: 80%;
+    height: 2px;
+    background: #1f8ef1;
+    transform: translateX(-50%);
+    filter: blur(4px);
+  }
+  
