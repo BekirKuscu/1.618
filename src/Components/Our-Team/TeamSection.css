@@ -1,6 +1,7 @@
 .team-section {
     text-align: center;
     padding: 80px 0;
+    margin-bottom: 15vh;
   }
   
   .team-section h2 {
@@ -19,10 +20,13 @@
     border: 1px solid #808080;
     text-align: center;
     transition: box-shadow 0.3s ease-in-out; 
+    /* background: linear-gradient(to bottom, #fff, #ecf5fc); White to grey gradient background */
+    border-radius: 15px; /* Adjust the radius value as needed */
   }
   
+  
   .team-member:hover {
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); 
   }
   
   .team-member img {
@@ -44,17 +48,24 @@
   
   .social-icons {
     display: flex;
-    justify-content: space-around;
+    justify-content: center; 
+    align-items: center; 
     margin-top: 20px;
+  }
+
+  .social-icon__link {
+    padding: 10px; 
   }
   
   .social-icons a {
     color: #0077b5;
+    margin-right: 10px;
   }
   
   .github-icon {
     color: #4078c0;
     font-size: 32px; 
+    margin-left: 10px
   }
   
   .linkedin-icon {
@@ -65,3 +76,47 @@
   .social-icons a:hover {
     transform: scale(1.2);
   }
+
+
+@media only screen and (max-width: 768px) {
+
+  .team-section {
+    padding: 40px 0; 
+    margin-bottom: 20vh; 
+  }
+
+  .team-members-container {
+    flex-direction: column; 
+    align-items: center; 
+    gap: 10px; 
+  }
+
+  .team-member {
+    width: 100%; 
+    max-width: none; 
+
+  }
+
+  .team-member img {
+    width: 100px; 
+    height: 100px; 
+    margin-top: 20px; 
+  }
+
+  .team-member-info {
+    font-size: 16px; 
+  }
+
+  .social-icons {
+    margin-top: 10px; 
+  }
+
+  .social-icons a {
+    margin-right: 5px; 
+  }
+
+  .github-icon,
+  .linkedin-icon {
+    font-size: 24px;
+  }
+}

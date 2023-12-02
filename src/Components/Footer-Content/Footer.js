@@ -2,6 +2,8 @@ import React from 'react';
 import './Footer.css';
 
 const Footer = () => {
+  const currentYear = new Date().getFullYear();
+
   return (
     <footer className="footer">
       <div className="waves">
@@ -32,14 +34,7 @@ const Footer = () => {
           </a>
         </li>
       </ul>
-      <ul className="menu">
-        {/* <li className="menu__item"><a className="menu__link" href="#">Home</a></li> */}
-        {/* <li className="menu__item"><a className="menu__link" href="#">About</a></li> */}
-        {/* <li className="menu__item"><a className="menu__link" href="#">Services</a></li> */}
-        {/* <li className="menu__item"><a className="menu__link" href="#">Meet the Team / Contact Us</a></li> */}
-        {/* <li className="menu__item"><a className="menu__link" href="#">Contact Us</a></li> */}
-      </ul>
-      <p>&copy;EcoVision | All Rights Reserved</p>
+      <p>&copy;EcoVision | All Rights Reserved | {currentYear}</p>
     </footer>
   );
 }
