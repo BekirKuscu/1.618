@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react';
-import { Cloudinary } from 'cloudinary-core';
+// import { Cloudinary } from 'cloudinary-core';
 import "./Header.css"
 
 export default function Header() {
@@ -52,13 +52,14 @@ export default function Header() {
 
 	return (
     	<div>
-        	<section class="ui-section-hero">
+			{/* <section class="ui-section-hero"></section>*/}
+        	<section>
         	<div class="ui-layout-container">
           		<div class="ui-section-hero__layout ui-layout-grid ui-layout-grid-2">
             		<div>
             		<h1>Rubbish Classification
 					</h1>
-              		<p class="ui-text-intro">We know that your life is of no value but the life of our planet does! So, help us segregate waste according to the category.</p>
+              		<p class="ui-text-intro">Embrace the power within you to make a positive impact—because our collective efforts today shape the flourishing beauty of tomorrow's world.</p>
               
               		<div class="ui-component-cta ui-layout-flex">
            
@@ -69,7 +70,7 @@ export default function Header() {
               		</div>
             	</div>
             
-            	<img src="https://media3.giphy.com/media/fnMNa6NRShQgvw5BJs/giphy.gif?cid=ecf05e47uy0z1k3ka1ce56qde3ow31wo5a2tlzov3tiopryt&ep=v1_gifs_search&rid=giphy.gif&ct=g" />
+            	<img src="https://t3.ftcdn.net/jpg/05/48/63/88/360_F_548638872_bvcmuxpP0d6S6uBWFt4vB7bnwH1HSU1N.jpg"/>
         	</div>
 			<div>
 				{

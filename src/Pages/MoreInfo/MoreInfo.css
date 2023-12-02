@@ -6,6 +6,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  margin-bottom: 30vh;
 }
 
 .image-sections {
@@ -52,6 +53,32 @@
   font-size: 24px;
   font-weight: bold;
   margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+
+  .more-info-container {
+    padding: 10px; 
+    margin-bottom: 20vh;
+  }
+
+  .image-sections,
+  .info-section {
+    width: 100%; 
+    margin-bottom: 20px; 
+  }
+
+  .info-box {
+    flex-direction: column; 
+    align-items: flex-start
+  }
+
+  .info-box img {
+    width: 100%; 
+    max-width: none; 
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
 }
 
 

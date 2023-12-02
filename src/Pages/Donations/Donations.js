@@ -31,36 +31,54 @@ const DonationsPage = () => {
 
   return (
     <div>
+       <img src="https://images.unsplash.com/photo-1655666582790-6ddaf5f194a5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDV8fHxlbnwwfHx8fHw%3D&w=1000&q=80" alt="Nature Image" class="nature-image"></img>
       <h1>Donations</h1>
       <p className='donations-quote'>"Recycle for a greener tomorrow, donate to save lives today. Small actions, big impact."</p>
       <div className="donationsBox">
         <h2>Donate Now</h2>
         <div className="time-toggle">
-          <input
+    <div className="time-option">
+        <input
             type="radio"
             id="weekly"
             name="time"
             value="weekly"
             checked={selectedTime === 'weekly'}
             onChange={handleTimeChange}
-          />
-          <label htmlFor="weekly">Weekly</label>
-          <input
+        />
+        <label htmlFor="weekly">Weekly</label>
+    </div>
+    <div className="time-option">
+        <input
             type="radio"
             id="monthly"
             name="time"
             value="monthly"
             checked={selectedTime === 'monthly'}
             onChange={handleTimeChange}
-          />
-          <label htmlFor="monthly">Monthly</label>
-        </div>
+        />
+        <label htmlFor="monthly">Monthly</label>
+    </div>
+    <div className="time-option">
+        <input
+            type="radio"
+            id="monthly"
+            name="time"
+            value="monthly"
+            checked={selectedTime === 'monthly'}
+            onChange={handleTimeChange}
+        />
+        <label htmlFor="monthly">One-off</label>
+    </div>
+</div>
+
         <div className="amount-selector">
           <select value={selectedAmount} onChange={handleAmountChange}>
-            <option value="$10">$10</option>
-            <option value="$20">$20</option>
-            <option value="$50">$50</option>
-            <option value="$100">$100</option>
+            <option value="$10">£10</option>
+            <option value="$20">£20</option>
+            <option value="$50">£50</option>
+            <option value="$100">£100</option>
+            <option value="$100">£100,000,000</option>
           </select>
         </div>
         <button className="donate-button" onClick={handleSubmit}>
