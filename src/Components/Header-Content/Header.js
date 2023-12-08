@@ -1,5 +1,4 @@
-import React, {useState, useEffect} from 'react';
-// import { Cloudinary } from 'cloudinary-core';
+import React, { useState, useEffect } from 'react'
 import "./Header.css"
 
 export default function Header() {
@@ -11,7 +10,7 @@ export default function Header() {
 	const uploadImage = async e => {
 		const files = e.target.files
 		const data = new FormData()
-		data.append('file',files[0])
+		data.append('file', files[0])
 		data.append('upload_preset', 'wasteimages')
 		setLoading(true)
 
@@ -31,19 +30,19 @@ export default function Header() {
 				'Content-type': 'application/json',
 			},
 			body: JSON.stringify({
-				"image" : file.secure_url
+				"image": file.secure_url
 			})
 		})
-		.then(res => res.json())
-		.then(data => {
-			console.log(data);
-			setImage(data.predict)	
-			setLoading(false)
-		})
-		.catch(err=>{
-            console.log(err);
-			console.log("Some Error while processing the image.")
-		})
+			.then(res => res.json())
+			.then(data => {
+				console.log(data);
+				setImage(data.predict)
+				setLoading(false)
+			})
+			.catch(err => {
+				console.log(err);
+				console.log("Some Error while processing the image.")
+			})
 	}
 
 	function refreshPage() {
@@ -51,43 +50,42 @@ export default function Header() {
 	}
 
 	return (
-    	<div>
+		<div>
 			{/* <section class="ui-section-hero"></section>*/}
-        	<section>
-        	<div class="ui-layout-container">
-          		<div class="ui-section-hero__layout ui-layout-grid ui-layout-grid-2">
-            		<div>
-            		<h1>Rubbish Classification
-					</h1>
-              		<p class="ui-text-intro">Embrace the power within you to make a positive impact—because our collective efforts today shape the flourishing beauty of tomorrow's world.</p>
-              
-              		<div class="ui-component-cta ui-layout-flex">
-           
-						<input type="file" id="InputFile" name = "file"
-							onChange={uploadImage} />
+			<section>
+				<div class="ui-layout-container">
+					<div class="ui-section-hero__layout ui-layout-grid ui-layout-grid-2">
+						<div>
+							<h1>Rubbish Classification
+							</h1>
+							<p class="ui-text-intro">Embrace the power within you to make a positive impact—because our collective efforts today shape the flourishing beauty of tomorrow's world.</p>
 
-                  		<button onClick={refreshPage} className="display-button">Reset</button>
-              		</div>
-            	</div>
-            
-            	<img src="https://t3.ftcdn.net/jpg/05/48/63/88/360_F_548638872_bvcmuxpP0d6S6uBWFt4vB7bnwH1HSU1N.jpg"/>
-        	</div>
-			<div>
-				{
-					loading ? (
-						<img className="loading-gif" src="https://media1.giphy.com/media/daxHPlbrWMnS2MsrE1/giphy.gif?cid=ecf05e47fywbxrtrdaz8rn9aq3r83yuj3h9x6mlmjsifi2rq&ep=v1_gifs_search&rid=giphy.gif&ct=g" />
-					) : (
-						<div className="display-image">
-							<img className="waste-image" src={imageURL} />
+							<div class="ui-component-cta ui-layout-flex">
+
+								<input type="file" id="InputFile" name="file"
+									onChange={uploadImage} />
+
+								<button onClick={refreshPage} className="display-button">Reset</button>
+							</div>
 						</div>
-					)
-				}
-			<div className="waste-type-div">
-				<h2 class='waste-heading'>{image}</h2>
-			</div>	
-			</div>
-        </div>
-    	</section> 
-    </div>
-  );
+
+					</div>
+					<div>
+						{
+							loading ? (
+								<img className="loading-gif" src="https://media1.giphy.com/media/daxHPlbrWMnS2MsrE1/giphy.gif?cid=ecf05e47fywbxrtrdaz8rn9aq3r83yuj3h9x6mlmjsifi2rq&ep=v1_gifs_search&rid=giphy.gif&ct=g" />
+							) : (
+								<div className="display-image">
+									<img className="waste-image" src={imageURL} />
+								</div>
+							)
+						}
+						<div className="waste-type-div">
+							<h2 class='waste-heading'>{image}</h2>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+	);
 }

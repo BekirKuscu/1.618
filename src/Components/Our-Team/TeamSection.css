@@ -20,8 +20,7 @@
     border: 1px solid #808080;
     text-align: center;
     transition: box-shadow 0.3s ease-in-out; 
-    /* background: linear-gradient(to bottom, #fff, #ecf5fc); White to grey gradient background */
-    border-radius: 15px; /* Adjust the radius value as needed */
+    border-radius: 15px;
   }
   
   
