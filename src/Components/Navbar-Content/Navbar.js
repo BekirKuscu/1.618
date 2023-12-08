@@ -7,7 +7,7 @@ function Navbar() {
     <div>
       <nav className="navbar">
         <a href="https://www.github.com/BEKIRKSU/1.618" target="_blank" rel="noopener noreferrer">
-          <img className="website-link" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Octicons-mark-github.svg/2048px-Octicons-mark-github.svg.png" alt="GitHub" />
+          <img className="website-link" src="/Images/ecoscan.jpg" alt="GitHub" />
         </a>
         <ul className="nav-list">
           <li className="nav-item">
