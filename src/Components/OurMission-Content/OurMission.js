@@ -5,7 +5,6 @@ const OurMission = () => {
   return (
     <section className="our-mission-section">
       <div className="ui-layout-container">
-        {/* Section 1: Our Mission */}
         <div className="ui-section-our-mission__layout ui-layout-grid ui-layout-grid-2">
           <img
             src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fFJlY3ljbGluZ3xlbnwwfHwwfHx8MA%3D%3D"
@@ -19,8 +18,6 @@ const OurMission = () => {
             </p>
           </div>
         </div>
-
-        {/* Section 2: Our Impact */}
         <div className="ui-section-our-mission__layout ui-layout-grid ui-layout-grid-2">
           <div className="impact-content">
             <h2>Our Impact</h2>

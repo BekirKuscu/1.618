@@ -34,7 +34,7 @@ const TeamSection = () => {
             <img src={member.image} alt={member.name} />
             <div className="team-member-info">
               <h3>
-                  {member.name}
+                {member.name}
               </h3>
               <div className="social-icons">
                 <a href={member.linkedin} target="_blank" rel="noopener noreferrer">
