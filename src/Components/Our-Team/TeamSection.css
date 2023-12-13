@@ -33,6 +33,7 @@
     height: 140px;
     border-radius: 50%;
     margin-top: 40px;
+    object-fit: cover;
   }
   
   .team-member-info {
